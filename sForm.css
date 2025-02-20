@@ -130,6 +130,10 @@ input:focus {
     border: solid 2px#E5E7EB;
 }
 
+input:invalid {
+    border: solid 2px red;
+}
+
 #submit-btn {
     margin-top: 20px;
     margin-left: 20px;
