@@ -6,13 +6,14 @@
 html, body {
     height: 100vh;
     margin: 0;
+    background-color: black;
 }
 
 h5 {
-    padding: 0px;
-    margin: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 label {
@@ -23,6 +24,7 @@ label {
 .form-container {
     display: flex;
     height: 100vh;
+    width: 100vw;
 }
 
 .left-container {
@@ -30,35 +32,124 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: 1px solid red;
     background-image: url('halie-west-25xggax4bSA-unsplash(1).jpg');
     background-size: cover;
     background-position: center;
+    margin-left: 10vw;
+    justify-content: space-between; /* Pushes logo to top and text to bottom */
+    padding-top: 180px;
+    padding-bottom: 10px;
 }
 
-.logo {
-    font-family: 'Norse Bold', sans-serif;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.logo h1 {
-    color: white;
-}
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-.right-container {
-    flex: 1;
+.logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
-    padding: 20px;
+    width: 100%;
 }
+
+.logo {
+    display: flex;
+    font-family: 'Norse Bold', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    /* Take full width of parent (left) container) */
+    height: 9rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo p {
+    color: white;
+    font-size: 6rem;
+}
+
+img {
+    width: 100px;
+    height: 130px;
+}
+
+.bottom-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bottom-text {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.bottom-text a {
+    color: white;
+}
+
+.right-container {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin-right: 10vw;
+}
+
+.paragraph-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+fieldset {
+    width: 95%;
+    border: 1px solid grey;
+}
+
+.input-container {
+    display: flex;
+    /* This container by default works with rows */
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;  /* Space between inputs */
+}
+
+input {
+    border-radius: 2px;
+}
+
+input:focus {
+    border: solid 2px#E5E7EB;
+}
+
+#submit-btn {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 12rem;
+    text-align: center;
+    background-color: #596D48;
+    color: white;
+    border: solid 4px #596D48;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#submit-btn:hover {
+    background-color: white;
+    color: #596D48;
+}
+
+.account-question {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+

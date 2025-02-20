@@ -9,48 +9,75 @@
 <body>
     <div class="form-container">
         <div class="left-container">
-            <div class="logo">
-                <img src="odin-lined.png" alt="Odin's symbol">
-                <h1>ODIN</h1>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="odin-lined.png" alt="Odin's symbol">
+                    <p>ODIN</p>
+                </div>
             </div>
             
-            Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-        </div>
-        <div class="right-container">
+            <div class="bottom-text-container">
+                <div class="bottom-text">
+                    Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </div>
+            </div>
+    </div>
+    <div class="right-container">
+        <div class="paragraph-container">
             <p>
-                This is not a real online service! You know you need something
-                like this in your life to help you realize your deepest dreams.
-                Sign up <i>now</i> to get started.
+                <strong>
+                    This is not a real online service! You know you need something<br>
+                    like this in your life to help you realize your deepest dreams.<br>
+                    Sign up <i>now</i> to get started.
+                </strong>
             </p>
-            <p>You know you want to.</p>
+            <strong> <p>You <i>know</i> you want to.</p></strong>
+           
 
-                <form action="https://httpbin.org/post" method="post">
-                    <fieldset>
-                        <h5>Sign Up</h5>
+        </div>
+        
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <h5>Let's do this!</h5>
+
+                <div class="input-container">
+
+                    <!-- Left column -->
+                    <div class="column">
                         <label for="first_name">FIRST NAME</label>
                         <input type="text" id="first_name" name="first_name" required>
+                                                
+                        <label for="first_name">EMAIL</label>
+                        <input type="email" id="email" name="first_name" required>
 
+
+                        <label for="password">PASSWORD</label>
+                        <input type="password" min="7" max="15" id="password" required>
+                    </div>
+
+                    <!-- Right column -->
+                    <div class="column">
                         <label for="last_name" id="last-name">LAST NAME</label>
                         <input type="text" id="last_name" name="first_name" required>
 
-                        <label for="first_name">EMAIL</label>
-                        <input type="email" id="email" name="first_name" required>
 
                         <label for="first_name">PHONE NUMBER</label>
                         <input type="text" id="first_name" name="first_name" placeholder="e.g. 081 596 4523" required>
 
-                        <label for="password">PASSWORD</label>
-                        <input type="password" min="7" max="15" id="password" required>
 
                         <label for="password">CONFIRM PASSWORD</label>
                         <input type="password" min="7" max="15" id="password" required>
-                    </fieldset>
+                    </div>
+                </div>
+                
+            </fieldset>
 
-                     <button type="submit">Create Account</button>
-                     <p>Already have an account? <a href="#">Log in</a></p>
-                </form>
-        </div>
-
+            <button type="submit" id="submit-btn">Create Account</button>
+            
+            <div class="account-question">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
     </div>
 </body>
 </html>
