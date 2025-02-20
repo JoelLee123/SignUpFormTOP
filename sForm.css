@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('Norse-Bold.otf');
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+h5 {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 0.5rem;
+    font-family: sans-serif;
+}
+
+.form-container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    background-image: url('halie-west-25xggax4bSA-unsplash(1).jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    font-family: 'Norse Bold', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logo h1 {
+    color: white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    padding: 20px;
+}
